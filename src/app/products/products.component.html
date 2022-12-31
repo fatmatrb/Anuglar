@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let p of products">
+          <app-product [product]="p" (deletProduct)="Delete($event)"></app-product>
+        </div>
+        <button class="btn btn-primary" (click)="message()"  >msg</button>&nbsp;&nbsp;&nbsp;
+        <p class="card-text">calcul : {{c}}</p>
+
+    </div>
+</div>
+
